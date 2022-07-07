@@ -1,50 +1,50 @@
 {
-    "@context": {
-      "sdgo": "http://metadata.un.org/sdg/ontology#",
-      "description": "https://schema.org/description",
-      "name": "https://schema.org/name",
-      "children": "https://json-schema.org/draft/2020-12/schema#children",
-      "api_version": "https://schema.org/version"
+  "@context": {
+    "sdgo": "http://metadata.un.org/sdg/ontology#",
+    "description": "https://schema.org/description",
+    "name": "https://schema.org/name",
+    "children": "https://json-schema.org/draft/2020-12/schema#children",
+    "api_version": "https://schema.org/version"
+  },
+  "@type": "https://schema.org/dataset",
+  "description": "The SDG Mapper API, developed by the JRC and DG INTPA, enables users to submit text and receive SDGs and Targets detected data in the form of JSON objects. In the returned json: n_occurrences is the sum of the counts for the different terms belonging to a specific goal or target; relevance, or % of occurrences, is the ratio between the number of occurrences for a specific goal or target and the total number of occurrences for all the goals or targets that have been detected.",
+  "children": [
+    {
+      "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Goal/1/Target/List?includechildren=false",
+      "@type": "sdgo:Goal",
+      "name": "SDG 1",
+      "n_occurrences": 3,
+      "relevance": "75.0%",
+      "children": [
+        {
+          "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Target/1.5/Indicator/List?includechildren=false",
+          "@type": "sdgo:Target",
+          "name": "Target 1.5",
+          "n_occurrences": 3
+        },
+        {
+          "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG1_undetected_target",
+          "@type": "sdgo:Target",
+          "name": "SDG 1_undetected_target",
+          "n_occurrences": 2
+        }
+      ]
     },
-    "@type": "https://schema.org/dataset",
-    "description": "The SDG Mapper API, developed by the JRC and DG INTPA, enables users to submit text and receive SDGs and Targets detected data in the form of JSON objects. In the returned json: n_occurrences is the sum of the counts for the different terms belonging to a specific goal or target; relevance, or % of occurrences, is the ratio between the number of occurrences for a specific goal or target and the total number of occurrences for all the goals or targets that have been detected.",
-    "children": [
-      {
-        "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Goal/1/Target/List?includechildren=false",
-        "@type": "sdgo:Goal",
-        "name": "SDG 1",
-        "n_occurrences": 3,
-        "relevance": "75.0%",
-        "children": [
-          {
-            "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Target/1.5/Indicator/List?includechildren=false",
-            "@type": "sdgo:Target",
-            "name": "Target 1.5",
-            "n_occurrences": 3
-          },
-          {
-            "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG1_undetected_target",
-            "@type": "sdgo:Target",
-            "name": "SDG 1_undetected_target",
-            "n_occurrences": 2
-          }
-        ]
-      },
-      {
-        "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Goal/3/Target/List?includechildren=false",
-        "@type": "sdgo:Goal",
-        "name": "SDG 3",
-        "n_occurrences": 1,
-        "relevance": "25.0%",
-        "children": [
-          {
-            "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG3_undetected_target",
-            "@type": "sdgo:Target",
-            "name": "SDG 3_undetected_target",
-            "n_occurrences": 1
-          }
-        ]
-      }
-    ],
-    "api_version": "v1"
-  }
+    {
+      "@id": "https://unstats.un.org/SDGAPI/v1/sdg/Goal/3/Target/List?includechildren=false",
+      "@type": "sdgo:Goal",
+      "name": "SDG 3",
+      "n_occurrences": 1,
+      "relevance": "25.0%",
+      "children": [
+        {
+          "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG3_undetected_target",
+          "@type": "sdgo:Target",
+          "name": "SDG 3_undetected_target",
+          "n_occurrences": 1
+        }
+      ]
+    }
+  ],
+  "api_version": "v1"
+}
