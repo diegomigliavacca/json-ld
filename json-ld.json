@@ -21,6 +21,12 @@
             "@type": "sdgo:Target",
             "name": "Target 1.5",
             "n_occurrences": 3
+          },
+          {
+            "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG1_undetected_target",
+            "@type": "sdgo:Target",
+            "name": "SDG 1_undetected_target",
+            "n_occurrences": 2
           }
         ]
       },
@@ -32,7 +38,7 @@
         "relevance": "25.0%",
         "children": [
           {
-            "@id": "",
+            "@id": "https://knowsdgs.jrc.ec.europa.eu/vocab/SDG3_undetected_target",
             "@type": "sdgo:Target",
             "name": "SDG 3_undetected_target",
             "n_occurrences": 1
